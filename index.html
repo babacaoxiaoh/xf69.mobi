@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>科技感图片展示</title>
+    <title>性福导航</title>
+	
     <style>
         * {
             margin: 0;
@@ -79,8 +80,8 @@
             animation: flyIn 1s ease-out forwards;
             opacity: 0;
             transition: transform 0.3s ease;
-            padding-bottom: 75%; /* 设置宽高比为4:3 */
-            height: 0; /* 高度由padding-bottom决定 */
+            padding-bottom: 75%;
+            height: 0;
         }
 
         .image-container:hover {
@@ -93,7 +94,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            object-fit: contain; /* 确保图片完整显示 */
+            object-fit: contain;
             transition: transform 0.5s ease;
         }
 
@@ -139,6 +140,8 @@
             flex-wrap: wrap;
             justify-content: center;
             width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
         }
 
         .icon-column {
@@ -146,6 +149,7 @@
             flex-direction: column;
             flex: 1;
             min-width: 0;
+            padding: 0 10px;
         }
 
         .icon-link {
@@ -172,18 +176,16 @@
             opacity: 0;
             overflow: hidden;
             position: relative;
-            padding: 10px; /* 添加内边距，确保图片不会被裁剪 */
-            margin-bottom: 10px; /* 图标与文字之间的间距 */
+            padding: 10px;
+            margin-bottom: 10px;
         }
 
         .icon-item img {
             width: 100%;
             height: 100%;
-            object-fit: contain; /* 确保图片完整显示 */
-            /* 暂时注释掉滤镜，以便调试 */
-            /* filter: brightness(0) invert(1); */
+            object-fit: contain;
             transition: transform 0.3s ease;
-            border-radius: 50%; /* 使图片也变成圆形 */
+            border-radius: 50%;
         }
 
         .icon-text {
@@ -354,7 +356,7 @@
             }
             
             .image-container {
-                padding-bottom: 75%; /* 保持4:3比例 */
+                padding-bottom: 75%;
             }
             
             .icon-column {
@@ -366,19 +368,19 @@
             }
             
             .icon-item {
-                padding: 8px; /* 移动端减少内边距 */
-                margin-bottom: 8px; /* 减少图标与文字之间的间距 */
+                padding: 8px;
+                margin-bottom: 8px;
             }
             
             .icon-text {
-                font-size: 0.7rem; /* 移动端减小文字大小 */
+                font-size: 0.7rem;
             }
         }
     </style>
 </head>
 <body>
     <div class="loading" id="loading">
-        <div class="loading-text">科技感加载中...</div>
+        <div class="loading-text">美媚洗澡中...</div>
         <div class="loading-bar">
             <div class="loading-progress"></div>
         </div>
@@ -388,8 +390,8 @@
 
     <div class="container">
         <div class="header">
-            <h1>科技视界</h1>
-            <p>探索未来科技的无限可能</p>
+            <h1>性福导航</h1>
+            <p>探索性爱的无限可能</p>
         </div>
 
         <div class="gallery" id="gallery">
@@ -404,22 +406,25 @@
     </div>
 
     <script>
+        // 确保DOM完全加载后执行
         document.addEventListener('DOMContentLoaded', function() {
             // 模拟加载过程
-            setTimeout(() => {
+            setTimeout(function() {
                 const loading = document.getElementById('loading');
-                loading.style.opacity = '0';
-                setTimeout(() => {
-                    loading.style.display = 'none';
-                }, 1000);
+                if (loading) {
+                    loading.style.opacity = '0';
+                    setTimeout(function() {
+                        loading.style.display = 'none';
+                    }, 1000);
+                }
             }, 2000);
 
             // 创建粒子背景
             createParticles();
 
-            // 图片数据 - 在这里可以修改链接
+            // 图片数据
             const images = [
-                { 
+                       { 
                     src: 'https://v.山东面粉.com/e20241216_1645_1.gif', 
                     title: '点我看看', 
                     description: '让你想不到的意外',
@@ -493,10 +498,9 @@
                 }
             ];
 
-            // 图标数据 - 在这里可以修改图片链接、文字和跳转链接
-            // 你可以随意增加或减少图标数量
+            // 图标数据 - 你可以随意增加或减少图标数量
             const icons = [
-                { 
+               { 
                     src: 'https://img.alicdn.com/imgextra/i4/4183327079/O1CN01APppyC22AEpC1WJKk_!!4183327079.gif', 
                     side: 'left', 
                     text: '普京赌城', 
@@ -659,10 +663,22 @@
                     link: 'https://baidu-0415-bs3zp.699mpy.xyz/' 
                 },
                 { 
-                    src: 'https://picsum.photos/seed/icon28/100/100.jpg', 
+                    src: 'https://pttptt.cc/images/friend/0/746.avif?1751042560', 
                     side: 'right', 
-                    text: 'WiFi', 
-                    link: 'https://example.com/wifi' 
+                    text: '漫画污污', 
+                    link: 'https://app06sd2s0.turlosnarkaslopid.com/bk/39990/ac5g1emh' 
+                },
+                { 
+                    src: 'https://www.picpic169.cc/static/s1/toptb/pjbc.gif', 
+                    side: 'left', 
+                    text: '情爱视频', 
+                    link: 'https://ywshi-b.xyz/' 
+                },
+                { 
+                    src: 'https://www.picpic169.cc/static/s1/toptb/tb6.gif', 
+                    side: 'right', 
+                    text: '少女喷泉', 
+                    link: 'https://aguty.wto.v-mayouyong.com:8952/npypxls/?channelCode=9240' 
                 },
                 { 
                     src: 'https://www.picpic169.cc/static/s1/toptb/pjbc.gif', 
@@ -676,7 +692,6 @@
                     text: '少女喷泉', 
                     link: 'https://aguty.wto.v-mayouyong.com:8952/npypxls/?channelCode=9240' 
                 }
-				
                 // 你可以在这里添加更多图标，例如：
                 // { 
                 //     src: 'https://picsum.photos/seed/icon31/100/100.jpg', 
@@ -688,88 +703,111 @@
 
             // 加载图片
             const gallery = document.getElementById('gallery');
-            
-            images.forEach((image, index) => {
-                setTimeout(() => {
-                    const imageLink = document.createElement('a');
-                    imageLink.className = 'image-link';
-                    imageLink.href = image.link; // 设置链接
-                    imageLink.target = '_blank'; // 在新标签页打开
-                    
-                    const imageContainer = document.createElement('div');
-                    imageContainer.className = 'image-container';
-                    imageContainer.style.animationDelay = `${index * 0.1}s`;
-                    
-                    imageContainer.innerHTML = `
-                        <img src="${image.src}" alt="${image.title}">
-                        <div class="image-overlay">
-                            <div class="image-title">${image.title}</div>
-                            <div class="image-description">${image.description}</div>
-                        </div>
-                    `;
-                    
-                    imageLink.appendChild(imageContainer);
-                    gallery.appendChild(imageLink);
-                }, 2500 + index * 100); // 延迟加载，确保动画效果
-            });
+            if (gallery) {
+                for (let i = 0; i < images.length; i++) {
+                    setTimeout(function(index) {
+                        const image = images[index];
+                        
+                        const imageLink = document.createElement('a');
+                        imageLink.className = 'image-link';
+                        imageLink.href = image.link;
+                        imageLink.target = '_blank';
+                        
+                        const imageContainer = document.createElement('div');
+                        imageContainer.className = 'image-container';
+                        imageContainer.style.animationDelay = (index * 0.1) + 's';
+                        
+                        const img = document.createElement('img');
+                        img.src = image.src;
+                        img.alt = image.title;
+                        
+                        const overlay = document.createElement('div');
+                        overlay.className = 'image-overlay';
+                        
+                        const title = document.createElement('div');
+                        title.className = 'image-title';
+                        title.textContent = image.title;
+                        
+                        const description = document.createElement('div');
+                        description.className = 'image-description';
+                        description.textContent = image.description;
+                        
+                        overlay.appendChild(title);
+                        overlay.appendChild(description);
+                        
+                        imageContainer.appendChild(img);
+                        imageContainer.appendChild(overlay);
+                        
+                        imageLink.appendChild(imageContainer);
+                        gallery.appendChild(imageLink);
+                    }, 2500 + i * 100, i);
+                }
+            }
 
             // 加载图标
             const iconsContainer = document.getElementById('icons-container');
-            const isMobile = window.innerWidth <= 768;
-            const columnsCount = isMobile ? 4 : 6; // 移动端4列，桌面端6列
-            
-            // 创建图标列
-            for (let i = 0; i < columnsCount; i++) {
-                const column = document.createElement('div');
-                column.className = 'icon-column';
+            if (iconsContainer) {
+                const isMobile = window.innerWidth <= 768;
+                const columnsCount = isMobile ? 4 : 6; // 移动端4列，桌面端6列
                 
-                // 为每列添加图标
-                for (let j = 0; j < Math.ceil(icons.length / columnsCount); j++) {
-                    const iconIndex = i * Math.ceil(icons.length / columnsCount) + j;
-                    if (iconIndex < icons.length) {
-                        const icon = icons[iconIndex];
-                        
-                        const iconLink = document.createElement('a');
-                        iconLink.className = 'icon-link';
-                        iconLink.href = icon.link; // 设置链接
-                        iconLink.target = '_blank'; // 在新标签页打开
-                        
-                        const iconItem = document.createElement('div');
-                        iconItem.className = `icon-item icon-${icon.side}`;
-                        
-                        // 设置动画延迟，使图标依次出现
-                        iconItem.style.animationDelay = `${3 + iconIndex * 0.1}s`;
-                        
-                        // 使用图片而不是图标
-                        const iconImg = document.createElement('img');
-                        iconImg.src = icon.src;
-                        iconImg.alt = icon.text;
-                        
-                        // 添加图片加载错误处理
-                        iconImg.onerror = function() {
-                            // 图片加载失败时使用备用图片
-                            this.src = 'https://picsum.photos/seed/error/100/100.jpg';
-                        };
-                        
-                        // 添加图标文字
-                        const iconText = document.createElement('div');
-                        iconText.className = 'icon-text';
-                        iconText.textContent = icon.text;
-                        
-                        iconItem.appendChild(iconImg);
-                        iconLink.appendChild(iconItem);
-                        iconLink.appendChild(iconText);
-                        column.appendChild(iconLink);
+                // 计算每列的图标数量
+                const iconsPerColumn = Math.ceil(icons.length / columnsCount);
+                
+                // 创建图标列
+                for (let i = 0; i < columnsCount; i++) {
+                    const column = document.createElement('div');
+                    column.className = 'icon-column';
+                    
+                    // 为每列添加图标
+                    for (let j = 0; j < iconsPerColumn; j++) {
+                        const iconIndex = i * iconsPerColumn + j;
+                        if (iconIndex < icons.length) {
+                            const icon = icons[iconIndex];
+                            
+                            const iconLink = document.createElement('a');
+                            iconLink.className = 'icon-link';
+                            iconLink.href = icon.link;
+                            iconLink.target = '_blank';
+                            
+                            const iconItem = document.createElement('div');
+                            iconItem.className = 'icon-item icon-' + icon.side;
+                            
+                            // 设置动画延迟，使图标依次出现
+                            iconItem.style.animationDelay = (3 + iconIndex * 0.1) + 's';
+                            
+                            // 使用图片而不是图标
+                            const iconImg = document.createElement('img');
+                            iconImg.src = icon.src;
+                            iconImg.alt = icon.text;
+                            
+                            // 添加图片加载错误处理
+                            iconImg.onerror = function() {
+                                // 图片加载失败时使用备用图片
+                                this.src = 'https://picsum.photos/seed/error/100/100.jpg';
+                            };
+                            
+                            // 添加图标文字
+                            const iconText = document.createElement('div');
+                            iconText.className = 'icon-text';
+                            iconText.textContent = icon.text;
+                            
+                            iconItem.appendChild(iconImg);
+                            iconLink.appendChild(iconItem);
+                            iconLink.appendChild(iconText);
+                            column.appendChild(iconLink);
+                        }
                     }
+                    
+                    iconsContainer.appendChild(column);
                 }
-                
-                iconsContainer.appendChild(column);
             }
         });
 
         // 创建粒子背景
         function createParticles() {
             const particlesContainer = document.getElementById('particles');
+            if (!particlesContainer) return;
+            
             const particleCount = 50;
             
             for (let i = 0; i < particleCount; i++) {
@@ -778,21 +816,29 @@
                 
                 // 随机大小
                 const size = Math.random() * 3 + 1;
-                particle.style.width = `${size}px`;
-                particle.style.height = `${size}px`;
+                particle.style.width = size + 'px';
+                particle.style.height = size + 'px';
                 
                 // 随机位置
-                particle.style.left = `${Math.random() * 100}%`;
+                particle.style.left = (Math.random() * 100) + '%';
                 
                 // 随机动画延迟和持续时间
                 const delay = Math.random() * 10;
                 const duration = Math.random() * 10 + 10;
-                particle.style.animationDelay = `${delay}s`;
-                particle.style.animationDuration = `${duration}s`;
+                particle.style.animationDelay = delay + 's';
+                particle.style.animationDuration = duration + 's';
                 
                 particlesContainer.appendChild(particle);
             }
         }
     </script>
+	<div id="footer">
+		<p align="center"><a href="search.html" target="_blank" title="福利搜索"> 福利搜索</a> | <a target="_blank" href="https://t.me/wof168">商务合作</a></p>
+		<p align="center">我們立足於美利堅合眾國，對全球華人服務，受北美法律保護。<a href="index.html" target="_blank">性爱导航</a>版權所有，未經授權禁止複製或建立鏡像</p>
+		<p align="center">禁止未滿18周歲的訪客訪問性爱导航，為了你的學業與健康請勿瀏覽本站</p><!-- Histats.com START (aync)-->
+		<script type="text/javascript">
+			var _Hasync= _Hasync|| [];_Hasync.push(['Histats.start', '1,3257996,4,0,0,0,00010000']);_Hasync.push(['Histats.fasi', '1']);_Hasync.push(['Histats.track_hits', '']);(function() {var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;hs.src = ('//s10.histats.com/js15_as.js');(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);})();
+		</script><noscript><a href="index.html" target="_blank"><img src="//sstatic1.histats.com/0.gif?3257996&101" alt="free hit counter code" border="0"></a></noscript><!-- Histats.com END -->
+	</div>
 </body>
 </html>
